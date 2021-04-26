@@ -1,0 +1,9 @@
+<ngx-dynamic-timeline [items]="items" [groupBy]="groupBy">
+  <ng-template let-key="key" #timelineKey>
+    <h4>{{ key }}</h4>
+
+    <ng-template let-item="item" #timelineValues>
+      {{ item.name}}
+    </ng-template>
+  </ng-template>
+</ngx-dynamic-timeline>
